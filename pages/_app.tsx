@@ -7,8 +7,8 @@ import "../styles/App.css"
 export default function App({Component, pageProps}: any) {
     return (
         <>
-            <ColorSchemeScript defaultColorScheme="light"/>
-            <MantineProvider defaultColorScheme="light" theme={theme}>
+            <ColorSchemeScript defaultColorScheme="dark"/>
+            <MantineProvider defaultColorScheme="dark" theme={theme}>
                 <Head>
                     <title>Mantine Template</title>
                     <meta
