@@ -6,7 +6,7 @@ export default function Page() {
     return (
         <Container size={1200}>
             <Flex my="1rem" justify="space-between">
-                <Image className="logo" src="/seoul_logo.png" alt="Logo" width="180" height="66"/>
+                <Image className="logo" src="/logo_white.png" alt="Logo" width="180" height="66"/>
                 <Text size="sm">Contact us</Text>
             </Flex>
             <Container>
