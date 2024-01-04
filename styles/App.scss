@@ -1,0 +1,40 @@
+body {
+  background: #fff;
+  background-image: url("https://i.ibb.co/LxPN2RX/landing-bg-gradient.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.djs {
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+}
+
+.video {
+  border-radius: 5px;
+  display: block;
+  border: hidden;
+}
+
+.logo {
+  width: 84px;
+  height: auto;
+  object-fit: cover;
+}
+
+.background-video video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}

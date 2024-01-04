@@ -11,9 +11,11 @@
   "dependencies": {
     "@mantine/core": "7.4.0",
     "@mantine/hooks": "7.4.0",
+    "@tabler/icons-react": "^2.45.0",
     "next": "14.0.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sass": "^1.69.7"
   },
   "devDependencies": {
     "@types/node": "20.8.10",
@@ -25,6 +27,5 @@
     "postcss-preset-mantine": "1.12.3",
     "postcss-simple-vars": "^7.0.1",
     "typescript": "5.2.2"
-  },
-  "packageManager": "yarn@4.0.1"
+  }
 }
