@@ -25,7 +25,7 @@ body {
 
 .background-video video {
   width: 100vw;
-  height: 100vh;
+  height: 26rem;
   object-fit: cover;
   position: fixed;
   left: 0;
