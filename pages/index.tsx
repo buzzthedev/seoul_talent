@@ -6,7 +6,7 @@ export default function Page() {
     return (
         <Container size={1200}>
             <Flex my="1rem" justify="space-between">
-                <Image className="logo" src="/seoul_logo.png" alt="Logo" width="180" height="66" />
+                <Image className="logo" src="/seoul_logo.png" alt="Logo" width="180" height="66"/>
                 <Text size="sm">Contact us</Text>
             </Flex>
             <Container>
@@ -14,20 +14,10 @@ export default function Page() {
                     <video playsInline loop muted autoPlay
                            src="/video.mov"></video>
                 </Container>
-                <Grid pos="relative" align="center">
-                    <Grid.Col span={{base: 12, sm: 6}}>
-                        <Stack gap="0.2rem" my="8rem">
-                            <Text c="indigo">Welcome to Seoul Talent</Text>
-                            <Title size="3rem" maw="46rem">Your Ultimate Destination for Unmatched DJ Experiences</Title>
-                        </Stack>
-                    </Grid.Col>
-                    <Grid.Col span={{base: 12, sm: 6}}>
-                        <iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/oKC_IhGax2I?si=bFfe9lXuf4QPPW8V?autoplay=1&loop=1&controls=0"
-                                title="YouTube video player"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen></iframe>
-                    </Grid.Col>
-                </Grid>
+                <Stack gap="0.2rem" my="8rem">
+                    <Text ta="center" c="indigo">Welcome to Seoul Talent</Text>
+                    <Title mx="auto" ta="center" size="3rem" maw="46rem">Your Ultimate Destination for Unmatched DJ Experiences</Title>
+                </Stack>
             </Container>
 
             <Grid className="djs">
