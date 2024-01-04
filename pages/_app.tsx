@@ -10,12 +10,12 @@ export default function App({Component, pageProps}: any) {
             <ColorSchemeScript defaultColorScheme="dark"/>
             <MantineProvider defaultColorScheme="dark" theme={theme}>
                 <Head>
-                    <title>Mantine Template</title>
+                    <title>Seoul Talent</title>
                     <meta
                         name="viewport"
                         content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
                     />
-                    <link rel="shortcut icon" href="/favicon.svg"/>
+                    <link rel="shortcut icon" href="/seoul_logo.png"/>
                 </Head>
                 <Component {...pageProps} />
             </MantineProvider>
