@@ -25,7 +25,7 @@ export default function Page() {
                     <Paper p="1rem" bg="none">
                         <Stack gap={0}>
                             <Image src="/dj1.jpg" alt="DJ 1" width="500" height="250"/>
-                            <Text mt="0.8rem" fw="bold">DJ Ralph</Text>
+                            <Text c="black" mt="0.8rem" fw="bold">DJ Ralph</Text>
                             <Text c="dimmed">A short description about the DJ</Text>
                             <Divider maw="20rem" my="1rem"/>
                             <Text c="grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae doloremque
@@ -37,7 +37,7 @@ export default function Page() {
                     <Paper p="1rem" bg="none">
                         <Stack gap={0}>
                             <Image src="/dj2.jpg" alt="DJ 1" width="500" height="250"/>
-                            <Text mt="0.8rem" fw="bold">DJ Louis</Text>
+                            <Text c="black" mt="0.8rem" fw="bold">DJ Louis</Text>
                             <Text c="dimmed">A short description about the DJ</Text>
                             <Divider maw="20rem" my="1rem"/>
                             <Text c="grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae doloremque

@@ -42,7 +42,7 @@ function Feature({title, description}) {
             <ThemeIcon variant="light" size={40} radius={40}>
                 <IconGauge style={{width: rem(18), height: rem(18)}} stroke={3}/>
             </ThemeIcon>
-            <Text size="lg" mt="sm" mb={7}>
+            <Text c="black" size="lg" mt="sm" mb={7}>
                 {title}
             </Text>
             <Text c="grey" lh={1.6}>
@@ -57,7 +57,7 @@ function FeaturesGrid() {
 
     return (
         <Container className={classes.wrapper}>
-            <Title className={classes.title}>The best DJs in United Kingdom</Title>
+            <Title c="black" className={classes.title}>The best DJs in United Kingdom</Title>
 
             <Container size={700} p={0}>
                 <Text c="grey" className={classes.description}>
