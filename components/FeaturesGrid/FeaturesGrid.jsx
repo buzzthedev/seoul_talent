@@ -21,19 +21,6 @@ const MOCKDATA = [
             'Discover skilled professionals who bring expertise, energy,\n' +
             'and an incredible playlist to every party or venue, setting the perfect tone',
     },
-    {
-        title: 'Customized Experiences',
-        description:
-            'From intimate gatherings to grand celebrations,\n' +
-            'our DJs craft the ideal atmosphere, ensuring your event stands out',
-    },
-    {
-        title: 'Expert Support',
-        description:
-            'Our team is here to assist you at every step, guaranteeing a smooth and enjoyable\n' +
-            'process from start to finish. Turn your events into extraordinary experiences with Seoul Events. Book\n' +
-            'your DJ today and let the music elevate your moments!',
-    },
 ];
 
 function Feature({title, description}) {
