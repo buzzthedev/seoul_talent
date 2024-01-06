@@ -1,6 +1,8 @@
 import {Container, Divider, Flex, Grid, Paper, Stack, Text, Title} from "@mantine/core";
 import Image from "next/image";
 import {FeaturesGrid} from "../components/FeaturesGrid/FeaturesGrid";
+import classes from "../components/FeaturesGrid/FeaturesGrid.module.css";
+import Contact from "../components/Contact";
 
 export default function Page() {
     return (
@@ -48,6 +50,13 @@ export default function Page() {
             </Grid>
 
             <FeaturesGrid/>
+
+            <Title c="black" className={classes.title}>Get in touch</Title>
+            <Container pb="6rem" size={800}>
+                <Contact />
+            </Container>
+
+            <Text pb="4rem" c="grey" ta="center">Copyright Seoul Talent 2024</Text>
         </Container>
     );
 }
