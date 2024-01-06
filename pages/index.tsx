@@ -30,7 +30,7 @@ export default function Page() {
                             <Stack gap={0}>
                                 <Image src="/dj1.jpg" alt="DJ 1" width="500" height="250"/>
                                 <Text c="black" mt="0.8rem" fw="bold">DJ 9</Text>
-                                <Text c="dimmed">A short description about the DJ</Text>
+                                <Text c="dimmed">Multi Genre DJ</Text>
                                 <Divider maw="20rem" my="1rem"/>
                                 <Text c="grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
                                     doloremque
