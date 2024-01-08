@@ -3,6 +3,7 @@ import Image from "next/image";
 import {FeaturesGrid} from "../components/FeaturesGrid/FeaturesGrid";
 import classes from "../components/FeaturesGrid/FeaturesGrid.module.css";
 import Contact from "../components/Contact";
+import Link from "next/link";
 
 export default function Page() {
     return (
@@ -10,7 +11,7 @@ export default function Page() {
             <Container size={1200}>
                 <Flex my="1rem" justify="space-between">
                     <Image className="logo" src="/logo_white.png" alt="Logo" width="180" height="66"/>
-                    <Text size="sm">Contact us</Text>
+                    <Text component={Link} href="#contact" size="sm">Contact us</Text>
                 </Flex>
             </Container>
             <Container>
@@ -59,7 +60,7 @@ export default function Page() {
                     <FeaturesGrid/>
 
                     <Title className={classes.title}>Get in touch</Title>
-                    <Container pb="6rem" size={800}>
+                    <Container id="contact" pb="6rem" size={800}>
                         <Contact/>
                     </Container>
                 </Container>
