@@ -4,8 +4,22 @@ import {FeaturesGrid} from "../components/FeaturesGrid/FeaturesGrid";
 import classes from "../components/FeaturesGrid/FeaturesGrid.module.css";
 import Contact from "../components/Contact";
 import Link from "next/link";
+import {useEffect, useState} from "react";
+
+const images = ['/image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg', 'image6.jpg']; // Replace with your image paths
 
 export default function Page() {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setCurrentSlide((prevSlide) =>
+                prevSlide === images.length - 1 ? 0 : prevSlide + 1
+            );
+        }, 3000); // Slide changes every 3000 ms (3 seconds)
+        return () => clearTimeout(timer);
+    }, [currentSlide]);
+
     return (
         <>
             <Container size={1200}>
@@ -15,13 +29,22 @@ export default function Page() {
                 </Flex>
             </Container>
             <Container>
+                <div className="slideshow">
+                    {images.map((image, index) => (
+                        <div
+                            key={index}
+                            className={`slide ${index === currentSlide ? 'active' : ''}`}
+                            style={{ backgroundImage: `url(${image})` }}
+                        ></div>
+                    ))}
+                </div>
                 <Container className="background-video">
-                    <video playsInline loop muted autoPlay
-                           src="/video.mov"></video>
+                    {/*<video playsInline loop muted autoPlay*/}
+                    {/*       src="/video.mov"></video>*/}
                 </Container>
                 <Stack gap="0.2rem" my="8rem">
                     <Text ta="center" c="indigo">Welcome to Seoul Talent</Text>
-                    <Title c="white" mx="auto" ta="center" size="3rem" maw="46rem">Your Ultimate Destination for Unmatched DJ
+                    <Title c="indigo" mx="auto" ta="center" size="3rem" maw="46rem">Your Ultimate Destination for Unmatched DJ
                         Experiences</Title>
                 </Stack>
             </Container>
@@ -32,7 +55,7 @@ export default function Page() {
                         <Grid.Col span={{base: 12, sm: 6}}>
                             <Paper shadow="md" p="2rem" bg="dark.7">
                                 <Stack gap={0}>
-                                    <Image src="/dj2.jpg" alt="DJ 1" width="500" height="250"/>
+                                    <Image src="/dj1.jpg" alt="DJ 1" width="500" height="250"/>
                                     <Text c="white" mt="0.8rem" fw="bold">Joseph Robinson</Text>
                                     <Text c="dimmed">Event organiser</Text>
                                     <Divider maw="20rem" my="1rem"/>
@@ -45,7 +68,7 @@ export default function Page() {
                         <Grid.Col span={{base: 12, sm: 6}}>
                             <Paper shadow="md" p="2rem" bg="dark.7">
                                 <Stack gap={0}>
-                                    <Image src="/dj1.jpg" alt="DJ 1" width="500" height="250"/>
+                                    <Image src="/dj2.jpg" alt="DJ 1" width="500" height="250"/>
                                     <Text c="white" mt="0.8rem" fw="bold">DJ 9</Text>
                                     <Text c="dimmed">Multi Genre DJ</Text>
                                     <Divider maw="20rem" my="1rem"/>
