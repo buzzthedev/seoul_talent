@@ -55,7 +55,7 @@ export default function Page() {
                         <Grid.Col span={{base: 12, sm: 6}}>
                             <Paper shadow="md" p="2rem" bg="dark.7">
                                 <Stack gap={0}>
-                                    <Image src="/dj1.jpg" alt="DJ 1" width="500" height="250"/>
+                                    <Image src="/dj-1.jpg" alt="DJ 1" width="500" height="250"/>
                                     <Text c="white" mt="0.8rem" fw="bold">Joseph Robinson</Text>
                                     <Text c="dimmed">Event organiser</Text>
                                     <Divider maw="20rem" my="1rem"/>
